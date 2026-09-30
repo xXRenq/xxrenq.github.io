@@ -125,3 +125,23 @@ export const games: GameEntry[] = [
 export const contact = {
   discordHandle: "xxrenq",
 };
+
+export type DownloadableTool = {
+  id: string;
+  name: string;
+  description: string;
+  version?: string;
+  fileHref: string;
+  fileSize?: string;
+  tags: string[];
+};
+
+export const downloads: DownloadableTool[] = [
+  {
+    id: "python-gartic-tool",
+    name: "Python Gartic Tool",
+    description: "A Gartic tool built by me.",
+    fileHref: "https://www.mediafire.com/file/u74h5ql0ybxvnpn/Python_Gartic_Tool_by_xXRenq.zip/file",
+    tags: ["Python", "Gartic Phone"],
+  },
+];

@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Tools } from "./pages/Tools";
 import { Projects } from "./pages/Projects";
 import { Games } from "./pages/Games";
+import { Downloads } from "./pages/Downloads";
 import { Links } from "./pages/Links";
 import { NotFound } from "./pages/NotFound";
 
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/tools" element={<Tools />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/downloads" element={<Downloads />} />
           <Route path="/links" element={<Links />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
