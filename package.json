@@ -8,7 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "build:preview": "tsc -b && vite build --config vite.config.preview.ts"
+    "build:preview": "tsc -b && vite build --config vite.config.preview.ts",
+    "worker:dev": "wrangler dev --config worker/wrangler.toml --var ENVIRONMENT:development",
+    "worker:deploy": "wrangler deploy --config worker/wrangler.toml",
+    "db:local": "wrangler d1 migrations apply xxrenq-access --local --config worker/wrangler.toml",
+    "db:remote": "wrangler d1 migrations apply xxrenq-access --remote --config worker/wrangler.toml"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",
@@ -27,6 +31,7 @@
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
     "vite": "^8.3.0",
-    "vite-plugin-singlefile": "^2.3.3"
+    "vite-plugin-singlefile": "^2.3.3",
+    "wrangler": "^4.147.0"
   }
 }

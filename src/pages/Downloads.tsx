@@ -2,6 +2,7 @@ import { Download, PackageOpen } from "lucide-react";
 import { Section, SectionHeading, Card } from "../components/Layout";
 import { LinkButton } from "../components/Button";
 import { Badge } from "../components/Badge";
+import { DownloadKeyAccess } from "../components/DownloadKeyAccess";
 import { downloads } from "../data/site";
 
 export function Downloads() {
@@ -44,6 +45,14 @@ export function Downloads() {
               </div>
             </Card>
           ))}
+        </div>
+      )}
+      {downloads.find((tool) => tool.id === "python-gartic-tool") && (
+        <div className="mt-8">
+          <DownloadKeyAccess
+            toolId="python-gartic-tool"
+            toolName={downloads.find((tool) => tool.id === "python-gartic-tool")!.name}
+          />
         </div>
       )}
     </Section>

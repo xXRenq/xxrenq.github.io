@@ -141,7 +141,7 @@ export const downloads: DownloadableTool[] = [
     id: "python-gartic-tool",
     name: "Python Gartic Tool",
     description: "A Gartic tool built by me.",
-    fileHref: "https://www.mediafire.com/file/u74h5ql0ybxvnpn/Python_Gartic_Tool_by_xXRenq.zip/file",
+    fileHref: "https://www.mediafire.com/file/tx6aeh4m60ny9dg/AutoDraw+v2.zip/file",
     tags: ["Python", "Gartic Phone"],
   },
 ];

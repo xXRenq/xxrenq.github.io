@@ -2,3 +2,6 @@ node_modules
 dist
 dist-preview
 *.local
+/worker/.dev.vars
+/worker/.wrangler/
+/src/components/the tool/garticphone python cheat/access_config.json
